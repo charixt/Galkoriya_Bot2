@@ -206,9 +206,9 @@ async def startprivate(bot, message):
     text=f"""**Bot Advanced Statistics 📊**
 ** 👥Members Counts in Our channel:**
 ◉──────────────────────────────────◉
- **Game of Thrones Telegram 🇱🇰  Users** : `{count}`
- **⚜️Game of Thrones⚜️ (Admins)**   : `{counta}`
- **Game of Thrones ᴏᴍғғɪᴄɪᴀʟ ʙᴏᴍᴛ 『🇱🇰』 Users** : `{countb}`
+ **Galkoriya Telegram 🇱🇰  Users** : `{count}`
+ **⚜️Galkoriya⚜️ (Admins)**   : `{counta}`
+ **Galkoriya ᴏᴍғғɪᴄɪᴀʟ ʙᴏᴍᴛ 『🇱🇰』 Users** : `{countb}`
 ◉──────────────────────────────────◉
 🖥 **System Information**
 **PlatForm :** `{splatform}`
@@ -688,7 +688,7 @@ async def pm_media(bot, message):
         return
     if await forcesub(bot, message):
        return
-    await message.reply_text(text=f"Ur Photo Sent To @gotsrilankachannel Admins", reply_markup=CLOSE_BUTTON)
+    await message.reply_text(text=f"Ur Photo Sent To @GalkoriyeDainamait Admins", reply_markup=CLOSE_BUTTON)
     info = await bot.get_users(user_ids=message.from_user.id)
     reference_id = int(message.chat.id)
     msg=message.caption
@@ -950,7 +950,7 @@ async def answer(client, inline_query):
                     video_url="https://telegra.ph/file/d58df8b002dfba939c9a8.mp4",
                     thumb_url="https://telegra.ph/file/7c8846dcae3767b15e3c0.jpg",
                     caption=f"""
-𝙷𝚒. 𝙱𝚘𝚢𝚜 𝚊𝚗𝚍 𝚐𝚒𝚛𝚕𝚜 𝚠𝚎 𝚊𝚛𝚎 𝚝𝚑𝚎 Game of THrones 𝚒𝚏 𝚢𝚘𝚞 𝚑𝚊𝚟𝚎 𝚖𝚎𝚖𝚎𝚜 𝚜𝚎𝚗𝚍 𝚢𝚘𝚞𝚛 𝚖𝚎𝚖𝚎𝚜 𝚝𝚘 𝚘𝚞𝚛 𝚋𝚘𝚝 𝚊𝚗𝚍 𝚑𝚎𝚕𝚙 𝚞𝚜.
+𝙷𝚒. 𝙱𝚘𝚢𝚜 𝚊𝚗𝚍 𝚐𝚒𝚛𝚕𝚜 𝚠𝚎 𝚊𝚛𝚎 𝚝𝚑𝚎 Galkoriya 𝚒𝚏 𝚢𝚘𝚞 𝚑𝚊𝚟𝚎 𝚖𝚎𝚖𝚎𝚜 𝚜𝚎𝚗𝚍 𝚢𝚘𝚞𝚛 𝚖𝚎𝚖𝚎𝚜 𝚝𝚘 𝚘𝚞𝚛 𝚋𝚘𝚝 𝚊𝚗𝚍 𝚑𝚎𝚕𝚙 𝚞𝚜.
 𝙱𝚘𝚝 = @gotsrilankabot
 Post By {inline_query.from_user.mention}
 """,
@@ -961,7 +961,7 @@ Post By {inline_query.from_user.mention}
                  InlineKeyboardButton('🐞 Report Bugs 🐞', user_id="1195158318")
                  ],
                  [
-                 InlineKeyboardButton('Game of Thrones ᴏᴍғғɪᴄɪᴀʟ ʙᴏᴍᴛ 『🇱🇰』', user_id="@gotsrilankabot")
+                 InlineKeyboardButton('Galkoriya ᴏᴍғғɪᴄɪᴀʟ ʙᴏᴍᴛ 『🇱🇰』', user_id="@gotsrilankabot")
                  ],
                  [
                  InlineKeyboardButton("➕ sʜᴀʀᴇ ʙᴏᴛ ➕", switch_inline_query="share"),
@@ -989,10 +989,10 @@ Post By {inline_query.from_user.mention}
                  InlineKeyboardButton("Game of Thrones Telegram 🇱🇰', url=t.me/gotsrilankachannel")
                  ],
                  [
-                 InlineKeyboardButton('Owner 👑', user_id="@Rose_park_anne")
+                 InlineKeyboardButton('Owner 👑', user_id="@Devil_lover21")
                  ],
                  [
-                 InlineKeyboardButton('Official Bot🤖', user_id="@gotsrilankabot")
+                 InlineKeyboardButton('Official Bot🤖', user_id="@GalkoriyeDainamaitbot")
                  ]])
                  
 
