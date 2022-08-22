@@ -6,7 +6,6 @@ datetime
 aiofiles
 youtube_dl
 aiohttp
-yt_dlp
 opencc
 telegraph
 youtube_search
