@@ -955,13 +955,13 @@ async def answer(client, inline_query):
 Post By {inline_query.from_user.mention}
 """,
                     reply_markup=InlineKeyboardMarkup([[              
-                 InlineKeyboardButton('🍁 Owner 🍁', user_id="@Rose_park_anne")
+                 InlineKeyboardButton('🍁 Owner 🍁', user_id="@Devil_lover21")
                  ],
                  [
                  InlineKeyboardButton('🐞 Report Bugs 🐞', user_id="1195158318")
                  ],
                  [
-                 InlineKeyboardButton('Galkoriya ᴏᴍғғɪᴄɪᴀʟ ʙᴏᴍᴛ 『🇱🇰』', user_id="@gotsrilankabot")
+                 InlineKeyboardButton('Galkoriya ᴏᴍғғɪᴄɪᴀʟ ʙᴏᴍᴛ 『🇱🇰』', user_id="@GalkoriyeDainamaitbot")
                  ],
                  [
                  InlineKeyboardButton("➕ sʜᴀʀᴇ ʙᴏᴛ ➕", switch_inline_query="share"),
