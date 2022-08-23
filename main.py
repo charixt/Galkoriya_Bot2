@@ -29,6 +29,8 @@ import heroku3
 import requests
 from helper.heroku_helper import HerokuHelper
 from helper.fsub import forcesub
+from pyrogram.errors import UsernameInvalid, UsernameNotOccupied
+from pyrogram.types import Message
 #--------------------------------------------------Db-------------------------------------------------#
 
 
@@ -512,6 +514,53 @@ async def status(bot, message):
 • **Message:-**
 """)
     await send_msg(PRIVATE_LOG, message=mesg)
+
+Client.on_message(filters.command("id"))
+async def id_(bot: Client, msg: Message):
+	if not msg.chat.type == "private":
+		main = f"This {msg.chat.type}'s ID is `{msg.chat.id}`"
+		if msg.reply_to_message:
+			if msg.reply_to_message.from_user:
+				main = f"{msg.reply_to_message.from_user.first_name}'s ID is `{msg.reply_to_message.from_user.id}`"
+				if msg.reply_to_message.sticker:
+					main += f"\n\nThis sticker's id is `{msg.reply_to_message.sticker.file_id}`"
+		await msg.reply(main)
+	else:
+		if len(msg.command) == 1:
+			await msg.reply(f"Your Telegram ID is: `{msg.from_user.id}`", quote=True)
+		if len(msg.command) == 2:
+			try:
+				uname = msg.command[1]
+				if uname.startswith("@"):
+					uname = uname[1:]
+				try:
+					user = await bot.get_users(uname)
+					name = user.mention
+					if len(user.first_name) <= 20:
+						pass
+					elif user.is_bot:
+						name = "This Bot"
+					else:
+						name = "This User"
+				except IndexError:
+					user = await bot.get_chat(uname)
+					name = '@'+user.username if user.username else user.title
+				id = user.id
+				await msg.reply(f"{name}'s id is `{id}`", quote=True)
+			except UsernameInvalid:
+				await msg.reply("Invalid Username.", quote=True)
+			except UsernameNotOccupied:
+				await msg.reply("This username is not occupied by anyone", quote=True)
+
+@Client.on_message(filters.new_chat_members)
+async def welcome(bot, msg):
+    bot_id = (await bot.get_me())["id"]
+    members = msg.new_chat_members
+    for member in members:
+        if member.id == bot_id:
+            await msg.reply(
+                f"Thanks for adding me here! \n\nThis group's ID is `{msg.chat.id}`"
+            )   
                           
 @Client.on_message(filters.private &filters.command("admincast"))
 async def status(bot, message):
@@ -530,7 +579,7 @@ async def status(bot, message):
 • **Of:** {message.from_user.mention} [`{message.from_user.id}`]
 """)
         
-@Client.on_message(filters.command(["help", "help@gotsrilanka1bot"]))
+@Client.on_message(filters.command(["help", "help@GalkoriyeDainamaitbot"]))
 async def help(bot, message):
     if await forcesub(bot, message):
        return
@@ -986,7 +1035,7 @@ Post By {inline_query.from_user.mention}
 **Post by**: {inline_query.from_user.mention}
 """,
                     reply_markup=InlineKeyboardMarkup([[              
-                 InlineKeyboardButton("Game of Thrones Telegram 🇱🇰', url=t.me/gotsrilankachannel")
+                 InlineKeyboardButton("Game of Thrones Telegram 🇱🇰', url=t.me/GalkoriyeDainamait")
                  ],
                  [
                  InlineKeyboardButton('Owner 👑', user_id="@Devil_lover21")
