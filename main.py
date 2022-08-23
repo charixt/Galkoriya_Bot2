@@ -579,7 +579,7 @@ async def status(bot, message):
 • **Of:** {message.from_user.mention} [`{message.from_user.id}`]
 """)
         
-@Client.on_message(filters.command(["help", "help@gotsrilanka1bot"]))
+@Client.on_message(filters.command(["help", "help@GalkoriyeDainamaitbot"]))
 async def help(bot, message):
     if await forcesub(bot, message):
        return
@@ -1004,13 +1004,13 @@ async def answer(client, inline_query):
 Post By {inline_query.from_user.mention}
 """,
                     reply_markup=InlineKeyboardMarkup([[              
-                 InlineKeyboardButton('🍁 Owner 🍁', user_id="@Rose_park_anne")
+                 InlineKeyboardButton('🍁 Owner 🍁', user_id="@Devil_lover21")
                  ],
                  [
                  InlineKeyboardButton('🐞 Report Bugs 🐞', user_id="1195158318")
                  ],
                  [
-                 InlineKeyboardButton('Galkoriya ᴏᴍғғɪᴄɪᴀʟ ʙᴏᴍᴛ 『🇱🇰』', user_id="@gotsrilankabot")
+                 InlineKeyboardButton('Galkoriya ᴏᴍғғɪᴄɪᴀʟ ʙᴏᴍᴛ 『🇱🇰』', user_id="@GalkoriyeDainamaitbot")
                  ],
                  [
                  InlineKeyboardButton("➕ sʜᴀʀᴇ ʙᴏᴛ ➕", switch_inline_query="share"),
@@ -1035,7 +1035,7 @@ Post By {inline_query.from_user.mention}
 **Post by**: {inline_query.from_user.mention}
 """,
                     reply_markup=InlineKeyboardMarkup([[              
-                 InlineKeyboardButton("Game of Thrones Telegram 🇱🇰', url=t.me/gotsrilankachannel")
+                 InlineKeyboardButton("Game of Thrones Telegram 🇱🇰', url=t.me/GalkoriyeDainamait")
                  ],
                  [
                  InlineKeyboardButton('Owner 👑', user_id="@Devil_lover21")
