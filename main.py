@@ -515,7 +515,7 @@ async def status(bot, message):
 """)
     await send_msg(PRIVATE_LOG, message=mesg)
 
-Client.on_message(filters.command("id"))
+@Client.on_message(filters.command("id"))
 async def id_(bot: Client, msg: Message):
 	if not msg.chat.type == "private":
 		main = f"This {msg.chat.type}'s ID is `{msg.chat.id}`"
