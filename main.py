@@ -1080,7 +1080,7 @@ Support: @gotsrilankachannel
 rint(" Deployed Successfully !")        
 Client.run()
 Footer
-© 2022 GitHub, Inc.
+GitHub, Inc.
 Footer navigation
 Terms
 Privacy
