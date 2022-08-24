@@ -1079,17 +1079,3 @@ Support: @gotsrilankachannel
 
 rint(" Deployed Successfully !")        
 Client.run()
-Footer
-
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
