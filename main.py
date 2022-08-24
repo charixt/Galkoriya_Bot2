@@ -1009,7 +1009,7 @@ async def answer(client, inline_query):
                     thumb_url="https://telegra.ph/file/7c8846dcae3767b15e3c0.jpg",
                     caption=f"""
 𝙷𝚒. 𝙱𝚘𝚢𝚜 𝚊𝚗𝚍 𝚐𝚒𝚛𝚕𝚜 𝚠𝚎 𝚊𝚛𝚎 𝚝𝚑𝚎 Galkoriya 𝚒𝚏 𝚢𝚘𝚞 𝚑𝚊𝚟𝚎 𝚖𝚎𝚖𝚎𝚜 𝚜𝚎𝚗𝚍 𝚢𝚘𝚞𝚛 𝚖𝚎𝚖𝚎𝚜 𝚝𝚘 𝚘𝚞𝚛 𝚋𝚘𝚝 𝚊𝚗𝚍 𝚑𝚎𝚕𝚙 𝚞𝚜.
-𝙱𝚘𝚝 = @gotsrilankabot
+𝙱𝚘𝚝 = @GalkoriyeDainamaitbot
 Post By {inline_query.from_user.mention}
 """,
                     reply_markup=InlineKeyboardMarkup([[              
@@ -1044,7 +1044,7 @@ Post By {inline_query.from_user.mention}
 **Post by**: {inline_query.from_user.mention}
 """,
                     reply_markup=InlineKeyboardMarkup([[              
-                 InlineKeyboardButton("Game of Thrones Telegram 🇱🇰', url=t.me/GalkoriyeDainamait")
+                 InlineKeyboardButton("Galkoriya Telegram 🇱🇰', url=t.me/GalkoriyeDainamait")
                  ],
                  [
                  InlineKeyboardButton('Owner 👑', user_id="@Devil_lover21")
