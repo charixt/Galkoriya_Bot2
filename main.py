@@ -1077,5 +1077,5 @@ Support: @gotsrilankachannel
 
 
 
-rint(" Deployed Successfully !")        
+print(" Deployed Successfully !")        
 Client.run()
